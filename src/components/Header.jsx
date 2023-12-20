@@ -2,7 +2,7 @@ const Header = () => {
   return (
     <header>
       <div className="nametag">Lauren Wilson</div>
-      <nav>Projects &bull; Games &bull; Contact</nav>
+      <nav>Projects &bull; Contact</nav>
     </header>
   );
 };

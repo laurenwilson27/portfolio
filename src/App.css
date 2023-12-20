@@ -27,3 +27,65 @@ main {
 
   padding-top: 24px;
 }
+
+.project {
+  height: 300px;
+  width: 1000px;
+  overflow: hidden;
+
+  display: flex;
+  justify-content: space-between;
+
+  background-position-y: 0px;
+  transition: background-position-y 0.5s;
+}
+
+.project:hover {
+  background-position-y: -100px;
+  transition: background-position-y 10s;
+}
+
+.oddProject {
+  flex-direction: row;
+  text-align: left;
+}
+
+.evenProject {
+  flex-direction: row-reverse;
+  text-align: right;
+}
+
+.projectTitle {
+  flex-grow: 1;
+  padding: 16px 32px;
+  align-self: flex-end;
+
+  font-size: 32pt;
+  font-family: "Bebas Neue", "Impact", sans-serif;
+
+  background-color: rgba(30, 30, 30, 0.8);
+
+  color: #eee;
+  text-shadow: 2px 2px #222;
+}
+
+.closed {
+  width: 32px;
+  transition: width 0.5s;
+  height: 300px;
+
+  background-color: white;
+}
+
+.open {
+  width: 600px;
+  transition: width 0.5s;
+  height: 300px;
+
+  background-color: white;
+}
+
+.projectInfoBox {
+  margin: 16px 48px;
+  font-weight: bold;
+}
