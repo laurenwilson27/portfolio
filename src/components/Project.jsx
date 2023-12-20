@@ -15,7 +15,7 @@ const Project = ({ project }) => {
     >
       <div className="projectTitle">{project.title}</div>
       <div className={open ? "open" : "closed"}>
-        {open && <div className="projectInfoBox">{project.desc}</div>}
+        {true && <div className="projectInfoBox">{project.desc}</div>}
       </div>
     </div>
   );

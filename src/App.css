@@ -31,7 +31,6 @@ main {
 .project {
   height: 300px;
   width: 1000px;
-  overflow: hidden;
 
   display: flex;
   justify-content: space-between;
@@ -73,6 +72,7 @@ main {
   width: 32px;
   transition: width 0.5s;
   height: 300px;
+  overflow: hidden;
 
   background-color: white;
 }
@@ -81,11 +81,13 @@ main {
   width: 600px;
   transition: width 0.5s;
   height: 300px;
+  overflow: hidden;
 
   background-color: white;
 }
 
 .projectInfoBox {
+  width: 400px;
   margin: 16px 48px;
   font-weight: bold;
 }
