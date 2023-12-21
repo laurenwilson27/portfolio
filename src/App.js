@@ -1,33 +1,39 @@
 import "./App.css";
 
 import Header from "./components/Header";
-import Project from "./components/Project";
+import ProjectGallery from "./components/ProjectGallery";
 
 function App() {
   const projects = [
     {
       index: 1,
-      title: "Fun-Wing",
-      image: "/images/funwingbanner.png",
+      title: "Fogtown Echoes",
+      image: "/images/fogtownbanner.png",
       desc: (
         <>
           <span>2023</span>
           <p>
-            A mockup website developed by myself, Tina Rowe, and Evan Harte
-            while attending Keyin College.
+            A small website developed by myself, Natalina Chiarot, Steven
+            Squires, and Mitchell Barkley for a Keyin College assignment. The
+            site is a simple, music-themed message board - users are able to
+            create accounts, post topics in various forums, and post comments
+            within those topics.
           </p>
         </>
       ),
     },
     {
       index: 2,
-      title: "Wun-Fing",
+      title: "Fun-Wing Vacations",
       image: "/images/funwingbanner.png",
       desc: (
-        <span>
-          A mockup website developed by myself, Tina Rowe, and Evan Harte while
-          attending Keyin College.
-        </span>
+        <>
+          <span>2023</span>
+          <p>
+            A mockup website developed by myself, Tina Rowe, and Evan Harte for
+            a Keyin College assignment.
+          </p>
+        </>
       ),
     },
   ];
@@ -35,9 +41,7 @@ function App() {
     <div>
       <Header />
       <main>
-        {projects.map((project) => {
-          return <Project key={project.index} project={project} />;
-        })}
+        <ProjectGallery projects={projects} />
       </main>
     </div>
   );

@@ -62,7 +62,7 @@ main {
   font-size: 32pt;
   font-family: "Bebas Neue", "Impact", sans-serif;
 
-  background-color: rgba(30, 30, 30, 0.8);
+  background-color: rgba(0, 0, 0, 0.8);
 
   color: #eee;
   text-shadow: 2px 2px #222;
@@ -84,6 +84,10 @@ main {
   overflow: hidden;
 
   background-color: white;
+}
+
+.evenProject .open .projectInfoBox {
+  float: right;
 }
 
 .projectInfoBox {
