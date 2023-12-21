@@ -12,8 +12,19 @@
   font-family: "Bebas Neue", "Impact", sans-serif;
 }
 
-nav {
+h1 {
+  margin-top: 12px;
+  margin-bottom: 12px;
+  text-align: center;
+  font-family: "Bebas Neue", "Impact", sans-serif;
+  font-size: 2em;
+}
+
+nav.sticky {
+  z-index: 1;
   height: 24px;
+  top: 0;
+  position: sticky;
 
   background-color: #222;
   color: #eee;
@@ -21,14 +32,27 @@ nav {
   text-align: center;
 }
 
-main {
+.navLink {
+  z-index: 2;
+  color: #eee;
+  font-weight: bold;
+}
+
+.navLink:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+section {
   max-width: 1000px;
   margin: 0px auto;
 
-  padding-top: 24px;
+  padding: 24px 0px;
 }
 
 .project {
+  position: relative;
+
   height: 300px;
   width: 1000px;
 
@@ -42,6 +66,7 @@ main {
 .project:hover {
   background-position-y: -100px;
   transition: background-position-y 10s;
+  cursor: pointer;
 }
 
 .oddProject {
@@ -68,6 +93,10 @@ main {
   text-shadow: 2px 2px #222;
 }
 
+.project:hover .projectTitle {
+  text-decoration: underline;
+}
+
 .closed {
   width: 32px;
   transition: width 0.5s;
@@ -86,12 +115,111 @@ main {
   background-color: white;
 }
 
-.evenProject .open .projectInfoBox {
+.evenProject * .projectInfoBox {
   float: right;
+  align-items: flex-end;
 }
 
 .projectInfoBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
   width: 400px;
+  height: 252px;
   margin: 16px 48px;
   font-weight: bold;
+}
+
+.projectInfoBox p {
+  flex: 1;
+}
+
+.preamble {
+  width: 50%;
+  margin: 24px auto;
+  font-weight: bold;
+}
+
+.tagBar {
+  display: flex;
+}
+
+.tag {
+  width: 200px;
+  height: 24px;
+  margin-right: 8px;
+  border-radius: 16px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.react {
+  background-color: #149eca;
+  color: white;
+}
+
+.gm8 {
+  background-color: #f40000;
+  color: white;
+}
+
+.gitHub {
+  background-color: #222;
+  color: white;
+}
+
+.gitHub:hover {
+  text-decoration: underline;
+}
+
+.noSrc {
+  background-color: #aaa;
+  color: #555;
+}
+
+.tagText {
+  color: inherit;
+}
+
+.sectionDivider {
+  width: 100%;
+  min-height: 24px;
+  padding-left: 24px;
+  margin: 8px auto;
+
+  background-color: #222;
+
+  color: #666;
+  font-size: small;
+  text-align: bottom;
+}
+
+.sectionDivider:has(+ footer) {
+  margin-bottom: 0px;
+}
+
+.contact {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.contactLink {
+  width: 200px;
+  font-weight: bold;
+  font-size: 1em;
+  text-align: center;
+  text-decoration: none;
+}
+
+.contactLink:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  color: #555;
+}
+
+.contactLink i {
+  margin-right: 8px;
 }
