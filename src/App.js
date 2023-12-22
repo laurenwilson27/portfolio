@@ -98,8 +98,8 @@ function App() {
         <p className="preamble">
           Below you can find a collection of projects I've worked both for
           schoolwork, and as a hobby. Click on a project to see more information
-          about it, as well as links to Git repositories containing the project
-          code.
+          about it, as well as links to GitHub repositories containing the
+          project code.
         </p>
         <main>
           <section>

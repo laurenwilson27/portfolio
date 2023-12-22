@@ -44,7 +44,7 @@ nav.sticky {
 }
 
 section {
-  max-width: 1000px;
+  max-width: 1032px;
   margin: 0px auto;
 
   padding: 24px 0px;
@@ -60,12 +60,14 @@ section {
   justify-content: space-between;
 
   background-position-y: 0px;
-  transition: background-position-y 0.5s;
+  filter: grayscale(80%);
+  transition: background-position-y 10s, filter 0.5s;
 }
 
 .project:hover {
   background-position-y: -100px;
-  transition: background-position-y 10s;
+  filter: grayscale(0%);
+  transition: background-position-y 10s, filter 1s;
   cursor: pointer;
 }
 
