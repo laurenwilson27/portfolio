@@ -1,7 +1,7 @@
 const GM8Tag = () => {
   return (
     <div className="tag gm8">
-      <span className="tagText">GameMaker 8.1</span>
+      <span className="tagText">GameMaker 8.0</span>
     </div>
   );
 };
